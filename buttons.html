@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Buttons Light</title>
+        <!-- <link rel="stylesheet" href="./css/desktop.css"> -->
+        <link id="styleLink" rel="stylesheet" type="text/css" href="desktop.css">
+    </head>
+  <body>
+    <button onclick="changeStyle()">Switch</button>
+    <h1>Buttons VB Light</h1>
+    <div>
+        <h3>Colors</h3>
+        <button type="button" class="button">button</button>
+        <button type="button" class="button primary">primary</button>
+        <button type="button" class="button secondary">secondary</button>
+        <button type="button" class="button tertiary">tertiary</button>
+        <button type="button" class="button success">success</button>
+        <button type="button" class="button alert">alert</button>
+        <button type="button" class="button warning">warning</button>
+        <button type="button" class="button info">info</button>
+        <button type="button" class="button closed">closed</button>
+        <button type="button" class="button subscribed">subscribed</button>
+        <button type="button" class="button comment">comment</button>
+        <button type="button" class="button" disabled>disabled</button>
+        <h3>Social</h3>
+        <button type="button" class="button facebook">facebook</button>
+        <button type="button" class="button twitter">twitter</button>
+        <button type="button" class="button google-plus">google-plus</button>
+        <button type="button" class="button instagram">instagram</button>
+        <h3>Hollow</h3>
+        <button type="button" class="button primary hollow">primary hollow</button>
+        <button type="button" class="button secondary hollow">secondary hollow</button>
+        <button type="button" class="button success hollow">success hollow</button>
+        <button type="button" class="button alert hollow">alert hollow</button>
+        <button type="button" class="button warning hollow">warning hollow</button>
+        <button type="button" class="button info hollow">info hollow</button>
+        <h3>Borderless</h3>
+        <button type="button" class="button primary borderless">primary borderless</button>
+        <button type="button" class="button secondary borderless">secondary borderless</button>
+        <button type="button" class="button success borderless">success borderless</button>
+        <button type="button" class="button alert borderless">alert borderless</button>
+        <button type="button" class="button warning borderless">warning borderless</button>
+        <button type="button" class="button info borderless">info borderless</button>
+        <h3>Border Type</h3>
+        <button type="button" class="button radius">radius</button>
+        <button type="button" class="button round">round</button>
+        <button type="button" class="button square">square</button>
+        <h3>Size</h3>
+        <button type="button" class="button">button</button>
+        <button type="button" class="button tiny">tiny</button>
+        <button type="button" class="button medium">medium</button>
+        <button type="button" class="button large">large</button>
+        <button type="button" class="button expand">expand</button>
+    </div>
+    <script>
+      let currentStyle = "desktop.css";
+
+      function changeStyle() {
+          let link = document.getElementById("styleLink");
+          if (currentStyle === "desktop.css") {
+              link.href = "desktop.dark.css";
+              currentStyle = "desktop.dark.css";
+          } else {
+              link.href = "desktop.css";
+              currentStyle = "desktop.css";
+          }
+      }
+    </script>
+  </body>
+</html>
